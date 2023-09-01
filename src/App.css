@@ -608,7 +608,7 @@ h1 {
     font-size: 13px;
   }
   .container {
-    height: 60vh;
+    height: 40vh;
     margin-top: 60px;
   }
 
@@ -622,9 +622,12 @@ h1 {
     padding: 25px 0px;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 480px) {
 
+/* @media screen and (min-width: 376px) and (max-width: 480px) {
+.forecast{
+  margin-bottom: -100px;
 }
+} */
 
 @media screen and (max-width: 375px) {
   h1 {
@@ -637,6 +640,9 @@ h1 {
   }
   .forecast{
     height: 50%;
+  }
+  .container {
+    height: 60vh;
   }
   .dmy {
     margin-top: -30%;
