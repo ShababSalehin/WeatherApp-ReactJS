@@ -172,6 +172,7 @@ img {
 .current-time {
   font-size: 35px;
   font-weight: 100;
+  margin-bottom: 10px;
   letter-spacing: 1px;
 }
 .current-date {
@@ -217,7 +218,7 @@ h1 {
 
 .container {
   width: 65%;
-  height: 81vh;
+  height: 80vh;
   margin: 50px auto;
   background-color: rgba(0, 0, 0, 0.73);
 }
@@ -264,7 +265,6 @@ h1 {
   width: 90%;
   padding: 0 30px 10px 30px;
   font-family: "Oxygen", sans-serif;
-  margin-bottom: 10%;
 }
 
 div#txt {
@@ -275,14 +275,16 @@ div#txt {
 }
 
 .dmy {
-margin-bottom: 20px;
+  float: left;
+  text-align: left;
+  position: absolute;
 }
 
 .temperature {
-  width: 100%;
-  /* float: right;
+  width: 50%;
+  float: right;
   position: relative;
-  left: 10px; */
+  left: 10px;
 }
 
 .temperature p {
@@ -305,7 +307,6 @@ margin-bottom: 20px;
 
 .forecast-icon {
   padding: 25px 0;
-  margin-bottom: -10px;
   /* background: white; */
 }
 
@@ -362,55 +363,37 @@ margin-bottom: 20px;
 
 /*-- Responsive Code --*/
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1920px) {
   .container {
     width: 50%;
   }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1919px){
+@media screen and (max-width: 1440px) {
   .container {
     width: 55%;
-      margin: 50px auto;
   }
-
-  .date-time {
-   align-items: center;
-  }
-  /* .dmy {
-    text-align: center;
-  }
-  .temperature p{
-    text-align: center;
-  } */
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1439px){
+@media screen and (max-width: 1280px) {
   .container {
     width: 60%;
   }
-  .footer-info {
-    margin-top: -40px;
-  }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px){
+@media screen and (max-width: 1024px) {
   .container {
     width: 75%;
   }
 }
 
-@media screen and (min-width: 966px) and (max-width: 1023px){
+@media screen and (max-width: 966px) {
   .container {
-    width: 95%;
+    width: 90%;
   }
 }
 
-@media screen and (min-width: 853px) and (max-width: 965px){
-  
-  .container {
-      width: 95%;
-    }
+@media screen and (max-width: 853px) {
   h1 {
     font-size: 45px;
   }
@@ -418,58 +401,45 @@ margin-bottom: 20px;
   /*--agileits--*/
 }
 
-@media screen and (min-width: 800px) and (max-width: 852px){
-  .container {
-      width: 95%;
-    }
-  
-h1 {
-  font-size: 35px;
-}
-
-.temperature p {
-  font-size: 100px;
-}
-  /* .dmy {
-    padding-top: 25px;
-  } */
-}
-
-@media screen and (min-width: 736px) and (max-width: 799px) {
-    .container {
-        width: 95%;
-      }
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 35px;
+  }
   .temperature p {
-      font-size: 80px;
-    }
-  
-    div#txt {
-      font-size: 30px;
-    }
-  /* .dmy {
-    padding-top: 10px;
-  } */
+    font-size: 100px;
+  }
+  .dmy {
+    padding-top: 25px;
+  }
+}
 
+@media screen and (max-width: 736px) {
+  .temperature p {
+    font-size: 80px;
+  }
+  .dmy {
+    padding-top: 10px;
+  }
+  div#txt {
+    font-size: 30px;
+  }
   .forecast-icon img {
     width: 110px;
   }
 }
 
-@media screen and (min-width: 667px) and (max-width: 735px) {
+@media screen and (max-width: 667px) {
   h1 {
     font-size: 40px;
     margin-top: 30px;
   }
   .container {
-        width: 100%;
-        margin-top: 30px;
+    width: 95%;
+    margin-top: 30px;
   }
 }
 
-@media screen and (max-width: 666px) {
-  .container {
-      width: 100%;
-    }
+@media screen and (max-width: 640px) {
   h1 {
     font-size: 30px;
     margin-top: 45px;
@@ -479,25 +449,21 @@ h1 {
   }
   /*--w3layouts--*/
   /*--agileits--*/
-  /* .dmy {
+  .dmy {
     padding-top: 17px;
-  } */
-  /* .temperature p {
+  }
+  .temperature p {
     padding-bottom: 10px;
-  } */
+  }
 }
 
-@media screen and (max-width: 603px){
+@media screen and (max-width: 603px) {
   h1 {
     font-size: 35px;
   }
   .city {
     width: 100%;
-    height: 100%;
     min-height: 300px;
-  }
-  .forecast {
-    height: 100%;
   }
   .temperature {
     text-align: right;
@@ -505,9 +471,9 @@ h1 {
   .temperature p {
     font-size: 100px;
   }
-  /* .dmy {
+  .dmy {
     padding-top: 35px;
-  } */
+  }
   .forecast-icon {
     margin: 10px 0;
   }
@@ -522,28 +488,20 @@ h1 {
     line-height: 30px;
     font-size: 14px;
   }
-  /* .footer-info {
-  position: absolute;  
-  margin-top: 450px;
-  margin-left: 70px;
-  } */
 }
 
-@media screen and (max-width: 533px){
+@media screen and (max-width: 533px) {
   h1 {
     font-size: 33px;
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   /*--w3layouts--*/
   /*--agileits--*/
   h1 {
     font-size: 28px;
-  }
-
-  .temperature p {
-    font-size: 60px;
+    letter-spacing: 2px;
   }
   .container {
     margin-bottom: 20px;
@@ -570,19 +528,12 @@ h1 {
     width: 100%;
     padding: 0;
   }
-/* .dmy {
-  margin-bottom: 30px;
-} */
-
-.mb-icon {
-  top: 20%;
-  left: 36%;
-  display: block;
-}
-
-.mb-icon p {
-  font-size: 25px;
-}
+  .dmy {
+    padding: 0;
+    margin-bottom: 35px;
+    text-align: center;
+    width: 100%;
+  }
   div#txt {
     font-size: 30px;
   }
@@ -596,7 +547,10 @@ h1 {
   .copyright {
     padding: 20px;
   }
-
+  .temperature p {
+    font-size: 60px;
+    padding-bottom: 15px;
+  }
   .forecast-icon img {
     width: 65px;
   }
@@ -611,19 +565,19 @@ h1 {
     height: 60vh;
     margin-top: 60px;
   }
-
+  .mb-icon {
+    top: 20% !important;
+    display: block !important;
+  }
   .forecast-icon,
   .today-weather h3 {
     display: none;
   }
   .today-weather {
     background-color: rgba(0, 0, 0, 0.73);
-    margin-top: 70px;
+    margin-top: 22px;
     padding: 25px 0px;
   }
-}
-@media screen and (min-width: 376px) and (max-width: 480px) {
-
 }
 
 @media screen and (max-width: 375px) {
@@ -633,27 +587,17 @@ h1 {
     letter-spacing: 0;
   }
   .city {
-    height: 80%;  
-  }
-  .forecast{
-    height: 50%;
+    min-height: 315px;
   }
   .dmy {
-    margin-top: -30%;
-    text-align: center;
+    margin-bottom: 30px;
   }
   .date {
     font-size: 18px;
   }
-  
   .temperature p {
-    margin-top: -45%;
-    /* margin-left: 5px; */
+    padding-bottom: 15px;
   }
-  .forecast{
-  margin-bottom: 40px;
-  }
-
 }
 
 /*-- //Responsive Code --*/

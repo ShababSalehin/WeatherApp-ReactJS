@@ -8,10 +8,9 @@ function App() {
       <div className="container">
         <CurrentLocation />
       </div>
-      <div className="footer-info">        
-        <a target="_blank" href="#">
-          Live Link
-        </a>
+      <div className="footer-info">Shabab Salehin Weather APP<br/>        
+        <a target="_blank" href="https://shababsalehin.github.io/WeatherApp-ReactJS/" style={{ color: 'yellow' }}>Live Link<br/></a>
+        ©Copyright 2023 || All Rights Reserved
       </div>
     </React.Fragment>
   );
